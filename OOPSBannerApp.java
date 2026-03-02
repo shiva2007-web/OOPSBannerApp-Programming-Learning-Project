@@ -1,20 +1,63 @@
+/**
+ * OOPSBannerApp
+ * UC3: Render OOPS as Banner using String.join()
+ *
+ * @author Gnanashiva
+ * @version 3.0
+ */
+
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Line 1
-        System.out.println("  *****   *****   *******  ******  ");
-        // Line 2
-        System.out.println(" *     * *     * *       * *     * ");
-        // Line 3
-        System.out.println(" *     * *     * *       * *     * ");
-        // Line 4
-        System.out.println(" *     * *     * *******  ******  ");
-        // Line 5
-        System.out.println(" *     * *     * *        *       ");
-        // Line 6
-        System.out.println(" *     * *     * *        *       ");
-        // Line 7
-        System.out.println("  *****   *****  *        *       ");
+        String row1 = String.join("",
+                "  *****   ",
+                "  *****   ",
+                " ******   ",
+                " ****** ");
+
+        String row2 = String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *     *  ",
+                " *      ");
+
+        String row3 = String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *     *  ",
+                " *      ");
+
+        String row4 = String.join("",
+                " *     *  ",
+                " *     *  ",
+                " ******   ",
+                "  ***** ");
+
+        String row5 = String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *        ",
+                "       *");
+
+        String row6 = String.join("",
+                " *     *  ",
+                " *     *  ",
+                " *        ",
+                "       *");
+
+        String row7 = String.join("",
+                "  *****   ",
+                "  *****   ",
+                " *        ",
+                " ****** ");
+
+        System.out.println(row1);
+        System.out.println(row2);
+        System.out.println(row3);
+        System.out.println(row4);
+        System.out.println(row5);
+        System.out.println(row6);
+        System.out.println(row7);
     }
 }
