@@ -1,63 +1,49 @@
-/**
- * OOPSBannerApp
- * UC3: Render OOPS as Banner using String.join()
- *
- * @author gnanashiva
- * @version 3.0
- */
-
 public class OOPSBannerApp {
+
+    public static String[] getOPattern() {
+        return new String[] {
+            "  ***  ",
+            " ** ** ",
+            " ** ** ",
+            " ** ** ",
+            " ** ** ",
+            " ** ** ",
+            "  ***  "
+        };
+    }
+
+    public static String[] getPPattern() {
+        return new String[] {
+            " ******",
+            " **  **",
+            " **  **",
+            " ******",
+            " **    ",
+            " **    ",
+            " **    "
+        };
+    }
+
+    public static String[] getSPattern() {
+        return new String[] {
+            " ***** ",
+            "**   **",
+            "**     ",
+            " ***** ",
+            "     **",
+            "**   **",
+            " ***** "
+        };
+    }
 
     public static void main(String[] args) {
 
-        String row1 = String.join("",
-                "  *****   ",
-                "  *****   ",
-                " ******   ",
-                " ****** ");
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        String[] sPattern = getSPattern();
 
-        String row2 = String.join("",
-                " *     *  ",
-                " *     *  ",
-                " *     *  ",
-                " *      ");
-
-        String row3 = String.join("",
-                " *     *  ",
-                " *     *  ",
-                " *     *  ",
-                " *      ");
-
-        String row4 = String.join("",
-                " *     *  ",
-                " *     *  ",
-                " ******   ",
-                "  ***** ");
-
-        String row5 = String.join("",
-                " *     *  ",
-                " *     *  ",
-                " *        ",
-                "       *");
-
-        String row6 = String.join("",
-                " *     *  ",
-                " *     *  ",
-                " *        ",
-                "       *");
-
-        String row7 = String.join("",
-                "  *****   ",
-                "  *****   ",
-                " *        ",
-                " ****** ");
-
-        System.out.println(row1);
-        System.out.println(row2);
-        System.out.println(row3);
-        System.out.println(row4);
-        System.out.println(row5);
-        System.out.println(row6);
-        System.out.println(row7);
+        for (int i = 0; i < oPattern.length; i++) {
+            System.out.println(oPattern[i] + "  " + oPattern[i] + "  " + pPattern[i] + "  " + sPattern[i]);
+        }
     }
 }
