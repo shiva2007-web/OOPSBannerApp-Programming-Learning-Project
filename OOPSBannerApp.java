@@ -1,3 +1,12 @@
+/**
+ * OOPSBannerApp
+ * UC3: Render OOPS as Banner using String.join()
+ *
+ * @author gnanashiva
+ * @author Gnanashiva
+ * @version 3.0
+ */
+
 public class OOPSBannerApp {
 
     public static String[] getOPattern() {
