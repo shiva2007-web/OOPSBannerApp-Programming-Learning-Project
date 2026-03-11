@@ -2,7 +2,7 @@
  * OOPSBannerApp
  * UC3: Render OOPS as Banner using String.join()
  *
- * @author YourName
+ * @author gnanashiva
  * @version 3.0
  */
 
